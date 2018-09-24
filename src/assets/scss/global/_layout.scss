@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+//Header and body Font needs to be Open sans
+.hero-container, h2, body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+// ------ Hero unit ------
+.hero-container {
+  height: 70vh;
+  width: 100%;
+  padding: 3rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  background: url('https://d13p2xj50zkyqm.cloudfront.net/promos/health/GLN/masterswitch_chocolateRL_ihtml_0317/HeadlineImage_1.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.hero-banner {
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  background: linear-gradient(to right, #c49a6c, #fff, #c49a6c);
+  font-size: 4em;
+  letter-spacing: .2rem;
+  color: red;
+  opacity: .8;
+  font-weight: bolder;
+}
+
+.hero-bottom-text {
+  margin-bottom: 6rem;
+}
+
+
+//banner-container = Brown Gradient banner
+.inital-section {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  top: 10%;
+  flex-direction: column;
+  color: #000;
+  .banner-container {
+    padding: 2% 0;
+    width: 100%;
+    left: 0;
+    background-image: linear-gradient(to right, #c49a6c, #c39b7c, #c49a6c);
+  }
+  h4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.banner-elements {
+  text-align: center;
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+//******** have an issue with using strong, b tag for bolding.
+strong {
+  font-weight: bold !important;
+}
+
+//checkmark
+.checkmark {
+  list-style-image: url('https://research.agorafinancial.com/reports/globalfiles/images/checkmark.png');
+}
+
+//Parallax-section
+.parallax-section {
+  background-image: url('https://d13p2xj50zkyqm.cloudfront.net/promos/health/GLN/masterswitch_chocolateRL_ihtml_0317/ParallaxOne_5.jpg');
+  height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//Parallax section text container
+.parallax-text {
+  color: #fff;
+  font-weight: 600;
+  line-height: rem-calc(50);
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding-top: 10%;
+  text-shadow: 1px 2px 4px #000;
+  opacity: .90;
+  h2 {
+    font-size: 3rem;
+    padding-bottom: 2%;
+  }
+}
+
+
+//Side bar = Side Bar Brown Color
+.brown-bar-section {
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.brown-sidebar {
+  background-color: #3d1c0f;
+  color: #fff;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: 10%;
+  padding: 2% 0;
+}
+
+.brown-sidebar-text{
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.red-section {
+  background-color: #A41F25;
+  padding: 2% 0;
+  opacity: .95;
+  background-image: url('https://d13p2xj50zkyqm.cloudfront.net/promos/health/GLN/masterswitch_chocolateRL_ihtml_0317/Gears_15.jpg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  h3 {
+    color: #FFCD2F;
+  }
+  p {
+    color: #fff;
+  }
+}
+
+.last-section {
+  background-image: url('https://d13p2xj50zkyqm.cloudfront.net/promos/health/GLN/masterswitch_chocolateRL_ihtml_0317/TransparentArrowBkgd.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+}
+//last section green container
+.green-container {
+  background-color: #495E40;
+  margin: 0 8%;
+  padding: 3% 0;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  p, h4 {
+    color: #fff;
+  }
+  h3 {
+    color: #F9D63F;
+    font-size: 2rem;
+  }
+}
+
+.transparent-arrow {
+  background-color: #fff;
+  opacity: .5;
+}
+
+
+//Green for View the Product label Button
+.product-lable-btn {
+  background-color: #2BB673;
+}
+
+button span {
+  color: #fff;
+}
+
+.button-container {
+  text-align: center;
+  padding: 3% 0;
+  p {
+    color: #000;
+  }
+}
+
+.button-add-cart {
+  position: relative;
+  overflow: hidden;
+  background-color: #E47E25;
+  border: 5% solid #fff;
+  &.is-adding {
+    border-radius: 25px;
+    max-width: 50px;
+    max-height: 50px;
+    cursor: default;
+
+    &::after {
+      animation: fadeIn 0.3s ease-in,
+                 spin 1.3s infinite ease-in-out;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &.is-adding span {
+    opacity: 0;
+  }
+
+  &::after {
+    content: " ";
+    border-top: solid 4px #17cae6;
+    border-right: solid 4px #17cae6;
+    border-bottom: solid 4px #17cae6;
+    border-left: solid 4px transparent;
+    border-radius: 50px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    left: 7px;
+    margin: auto;
+    max-width: 30px;
+    max-height: 30px;
+    opacity: 0;
+    z-index: 1;
+  }
+}
+
+@keyframes spin {
+  0%, 5% {
+    transform: rotate(0deg);
+  }
+  95%, 100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
